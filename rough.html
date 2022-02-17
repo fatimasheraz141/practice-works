@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #road1{
+            position: absolute;
+            width:1400px;
+            height: 128px;
+            top: 85px;
+
+        }
+        #road2{
+            /* height: 300px; */
+            /* width: 400px; */
+            transform: rotate(90deg);
+            position: absolute;
+            left:600px;
+            top: 130px;
+
+        }
+        #carBody{
+            width: 300px;
+        }
+        #wheel1, #wheel2{
+            position: absolute;
+            width: 40px;
+            /* animation: wheel1Animation 5s infinite linear;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards; */
+
+        }
+        #wheel1{
+            left:49px;
+            top:69px;
+            animation: wheel1Animation 1s infinite linear;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        }
+        #wheel2{
+            left: 219px;
+            top: 69px;
+            animation: wheel2Animation 1s infinite linear;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+        }
+        #car{
+            position: absolute;
+            top:15%;
+            animation: carAnimation 4s ease-in 0s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes carAnimation{
+            0%{
+                left: 0%;
+            }
+            50%{
+                left:40%;
+            }
+            70%{
+                left: 80%;
+            }
+        }
+        #carSecond{
+            transform: rotate(180deg);
+            width: 120px;
+            height: 120px;
+            position: relative;
+            left: 900px;
+            top: 450px;
+        }
+        @keyframes wheel1Animation{
+            from {
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+            }
+            @keyframes wheel2Animation{
+            from {
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+            }      
+            #car2{
+            animation: carAnimation 5s ease-in 0s;
+            animation-fill-mode: forwards;
+            }
+            @keyframes car2{
+                0%{
+                left: 0%;
+            }
+            50%{
+                left:60%;
+            }
+            70%{
+                left: 90%;
+            }
+            }
+        
+    </style>
+</head>
+<body>
+    <img src="road.jpg" id="road1">
+    <img src="road.jpg" id="road2">
+    <div id="car">
+        <img id="carBody" src="car.png" alt="">
+        <img id="wheel1" src="wheel.png" alt="">
+        <img id="wheel2" src="wheel.png" alt="">
+    </div>
+    <div id="car2">
+        <img id="carSecond" src="car2.png">
+    </div>
+</body>
+</html>
+</body>
+</html>

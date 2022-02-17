@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#parent{
+    justify-content: center;
+    display: flex;
+    list-style-type: none;
+}
+nav{
+    background-color: blue;
+}
+#parent{
+    margin-left: 20px;
+    line-height: 40px;
+}
+/* #childMenu{
+
+} */
+#provinceSector:hover{
+ color: brown;
+}
+
+</style>
+<body>
+    <div>
+        <nav>
+            <ol id="parent">
+                <li>Home</li>
+                <li id="provinceSector">Provinces
+                <ol id="childMenu">
+                    <li>Punjab</li>
+                    <li>Sindh</li>
+                    <li>BWP</li>
+                    <li>Balochistan</li>
+                </ol>
+                </li>
+                
+                <li>Services</li>
+                <li>Contact Us</li>
+                <li>About</li>
+            </ol>
+        </nav>
+    </div>
+</body>
+</html>

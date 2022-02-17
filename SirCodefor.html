@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+    body{
+        margin:0;
+        background-color: black;
+    }
+
+    #container{
+        width:50%;
+        margin: auto;
+        background-color: #ececec;
+        height: 100vh;
+    }
+
+    .box{
+        width:190px;
+        height: 150px;
+        background: white;
+        position: relative;
+        display: inline-block;
+    }
+
+    #box-container{
+        width: fit-content;
+        margin: auto;
+        padding-top: 40px;
+    }
+
+    #orders{
+        margin-left:35px;
+        box-shadow: 0 6px 9px 1px rgb(179, 65, 65);
+    }
+
+    #lightCyanCircle{
+        width:85px;
+        height: 85px;
+        border:5px solid seagreen;
+        border-radius: 85px;
+        margin: auto;
+        position: relative;
+        top:20px;
+        border-top-color: gainsboro;;
+        border-right-color: gainsboro;
+        transform: rotate(-125deg);
+    }
+
+    #panel-patti{
+        border-top: 1px solid darkgray;
+        height: 27px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+</style>
+
+</head>
+<body>
+
+    <div id="container">
+
+        <div id="box-container">
+            <div class="box" id="taskList"></div>
+            <div class="box" id="orders">
+                <div id="lightCyanCircle"></div>
+                <div id="panel-patti"></div>
+            </div>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
